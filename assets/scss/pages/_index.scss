@@ -67,24 +67,24 @@ a {
 }
 
 /* Starts from here */
-:root {
+// :root {
 
-/* Colors: */
---unnamed-color-fbf2f2: #FBF2F2;
---unnamed-color-000000: #000000;
---unnamed-color-ffffff: #FFFFFF;
---unnamed-color-aa0601: #AA0601;
---unnamed-color-650300: #650300;
---unnamed-color-212529: #212529;
+// /* Colors: */
+// --unnamed-color-fbf2f2: #FBF2F2;
+// --unnamed-color-000000: #000000;
+// --unnamed-color-ffffff: #FFFFFF;
+// --unnamed-color-aa0601: #AA0601;
+// --unnamed-color-650300: #650300;
+// --unnamed-color-212529: #212529;
 
-/* Font/text values */
---unnamed-font-family-source-han-sans-tw: Noto Sans TC;
---unnamed-font-style-normal: normal;
---unnamed-font-weight-normal: normal;
---unnamed-font-size-14: 14px;
---unnamed-character-spacing-0: 0px;
---unnamed-line-spacing-21: 21px;
-}
+// /* Font/text values */
+// --unnamed-font-family-source-han-sans-tw: Noto Sans TC;
+// --unnamed-font-style-normal: normal;
+// --unnamed-font-weight-normal: normal;
+// --unnamed-font-size-14: 14px;
+// --unnamed-character-spacing-0: 0px;
+// --unnamed-line-spacing-21: 21px;
+// }
 .material-symbols-rounded {
 	color: white;
 	font-variation-settings:
@@ -95,7 +95,7 @@ a {
 }
 header {
 	.navbar {
-		background: var(--unnamed-color-aa0601) 0% 0% no-repeat padding-box;
+		background: #AA0601 0% 0% no-repeat padding-box;
 		.content {
 			padding-top: 16px; padding-bottom: 15.43px;
 			height: 80px;
@@ -106,10 +106,9 @@ header {
 				align-items: center;
 				gap: 64px;
 				li a {
-					font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) 20px/30px var(--unnamed-font-family-source-han-sans-tw);
-					letter-spacing: var(--unnamed-character-spacing-0);
-					color: var(--unnamed-color-ffffff);
-					text-align: left;
+					font: normal normal normal 20px/30px Noto Sans TC;
+					letter-spacing: 0px;
+					color: #FFFFFF;
 					text-transform: uppercase;
 				}
 			}
@@ -125,24 +124,21 @@ main {
 			flex-direction: column;
 			align-items: flex-end;
 			h3 {
-				font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) 36px/54px var(--unnamed-font-family-source-han-sans-tw);
-				letter-spacing: var(--unnamed-character-spacing-0);
-				color: var(--unnamed-color-650300);
-				text-align: center;
+				font: normal normal normal 36px/54px Noto Sans TC;
+				letter-spacing: 0px;
+				color: #650300;
 			}
 			h2 {
-				font: var(--unnamed-font-style-normal) normal bold 64px/96px var(--unnamed-font-family-source-han-sans-tw);
-				letter-spacing: var(--unnamed-character-spacing-0);
-				color: var(--unnamed-color-650300);
-				text-align: center;
+				font: normal normal bold 64px/96px Noto Sans TC;
+				letter-spacing: 0px;
+				color: #650300;
 			}
 			a {
-				background: var(--unnamed-color-aa0601) 0% 0% no-repeat padding-box;	
+				background: #AA0601 0% 0% no-repeat padding-box;
 				span {
-					font: medium normal medium 20px/30px var(--unnamed-font-family-source-han-sans-tw);
-					letter-spacing: var(--unnamed-character-spacing-0);
-					color: var(--unnamed-color-ffffff);
-					text-align: left;
+					font: normal normal medium 20px/30px Noto Sans TC;
+					letter-spacing: 0px;
+					color: #FFFFFF;
 					text-transform: uppercase;
 				}
 			}
