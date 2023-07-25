@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap');
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+a {
+	display: block;
+	text-decoration: none;
+}
+.container {
+	max-width: 1296px;
+	margin: 0 auto;
+}
+
+/* Starts from here */
+:root {
+
+/* Colors: */
+--unnamed-color-fbf2f2: #FBF2F2;
+--unnamed-color-000000: #000000;
+--unnamed-color-ffffff: #FFFFFF;
+--unnamed-color-aa0601: #AA0601;
+--unnamed-color-650300: #650300;
+--unnamed-color-212529: #212529;
+
+/* Font/text values */
+--unnamed-font-family-source-han-sans-tw: Noto Sans TC;
+--unnamed-font-style-normal: normal;
+--unnamed-font-weight-normal: normal;
+--unnamed-font-size-14: 14px;
+--unnamed-character-spacing-0: 0px;
+--unnamed-line-spacing-21: 21px;
+}
+.material-symbols-rounded {
+	color: white;
+	font-variation-settings:
+	'FILL' 0,
+	'wght' 400,
+	'GRAD' 0,
+	'opsz' 48
+}
+header {
+	.navbar {
+		background: var(--unnamed-color-aa0601) 0% 0% no-repeat padding-box;
+		.content {
+			padding-top: 16px; padding-bottom: 15.43px;
+			height: 80px;
+			display: flex;
+			justify-content: space-between;
+			ul {
+				display: flex;
+				align-items: center;
+				gap: 64px;
+				li a {
+					font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) 20px/30px var(--unnamed-font-family-source-han-sans-tw);
+					letter-spacing: var(--unnamed-character-spacing-0);
+					color: var(--unnamed-color-ffffff);
+					text-align: left;
+					text-transform: uppercase;
+				}
+			}
+		}
+	}
+}
+main {
+	.hero-banner {
+		height: 787px;
+		// background: url(../assets/images/home-header.png) no-repeat;
+		.content {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-end;
+			h3 {
+				font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) 36px/54px var(--unnamed-font-family-source-han-sans-tw);
+				letter-spacing: var(--unnamed-character-spacing-0);
+				color: var(--unnamed-color-650300);
+				text-align: center;
+			}
+			h2 {
+				font: var(--unnamed-font-style-normal) normal bold 64px/96px var(--unnamed-font-family-source-han-sans-tw);
+				letter-spacing: var(--unnamed-character-spacing-0);
+				color: var(--unnamed-color-650300);
+				text-align: center;
+			}
+			a {
+				background: var(--unnamed-color-aa0601) 0% 0% no-repeat padding-box;	
+				span {
+					font: medium normal medium 20px/30px var(--unnamed-font-family-source-han-sans-tw);
+					letter-spacing: var(--unnamed-character-spacing-0);
+					color: var(--unnamed-color-ffffff);
+					text-align: left;
+					text-transform: uppercase;
+				}
+			}
+		}
+	}
+	
+}
