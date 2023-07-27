@@ -56,7 +56,7 @@ table {
 img {
     max-width: 100%;
     height: auto;
-	display: block;
+	vertical-align: middle;
 }
 a {
 	text-decoration: none;
@@ -65,10 +65,8 @@ a {
 	margin: 0 auto;
 	padding: 0 12px;
 	max-width: 1320px; //includeing padding is needed: 1296+12*2
-	height: 100%;
 }
 
-/* Starts from here */
 :root {
 
 /* Colors: */
@@ -87,6 +85,7 @@ a {
 --unnamed-character-spacing-0: 0px;
 --unnamed-line-spacing-21: 21px;
 }
+/* Google Fonts Icon */
 .material-symbols-rounded {
 	color: white;
 	font-variation-settings:
@@ -95,15 +94,104 @@ a {
 	'GRAD' 0,
 	'opsz' 48
 }
+/* Make wheels */
+.col-1 {
+	width: 8.333%;
+}
+.col-2 {
+	width: 16.666%;
+}
+.col-3 {
+	width: 25%;
+}
+.col-4 {
+	width: 33.333%;
+}
+.col-5 {
+	width: 41.666%;
+}
+.col-6 {
+	width: 50%;
+}
+.col-7 {
+	width: 58.333%;
+}
+.col-8 {
+	width: 66.666%;
+}
+.col-9 {
+	width: 75%;
+}
+.col-10 {
+	width: 83.333%;
+}
+.col-11 {
+	width: 91.666%;
+}
+.col-12 {
+	width: 100%;
+}
+.mx-3 {
+	margin-left: 12px;
+	margin-right: 12px;
+}
+.pt-12 {
+	padding-top: 48px;
+}
+.pb-8 {
+	padding-bottom: 32px;
+}
+.py-2 {
+	padding-top: 8px;
+	padding-bottom: 8px;
+}
+.py-4 {
+	padding-top: 16px;
+	padding-bottom: 16px;
+}
+.py-20 {
+	padding-top: 80px;
+	padding-bottom: 80px;
+}
+.row {
+	margin-left: -12px;
+	margin-right: -12px;
+}
+.d-flex {
+	display: flex;
+}
+.flex-direction-column {
+	flex-direction: column;
+}
+.justify-content-center {
+	justify-content: center;
+}
+.justify-content-space-between {
+	justify-content: space-between;
+}
+.align-items-center {
+	align-items: center;
+}
+.align-items-flex-end {
+	align-items: flex-end;
+}
+.g-8 {
+	gap: 32px;
+}
+.g-12 {
+	gap: 48px;
+}
+
+/* Starts from here */
 header {
 	.navbar {
 		background: var(--unnamed-color-aa0601) 0% 0% no-repeat padding-box;
 		.content {
-			padding-top: 16px;
-			padding-bottom: 15.43px;
 			height: 80px;
-			display: flex;
-			justify-content: space-between;
+			img {
+				width: 80px;
+				height: 48.57px;
+			}
 			ul {
 				display: flex;
 				align-items: center;
@@ -126,10 +214,6 @@ main {
 		background-size: cover;
 		.content {
 			height: 100%;
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-			align-items: flex-end;
 			h3 {
 				font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) 36px/54px var(--unnamed-font-family-source-han-sans-tw);
 				letter-spacing: var(--unnamed-character-spacing-0);
@@ -143,6 +227,7 @@ main {
 				text-align: center;
 			}
 			a {
+				margin-top: 4px;
 				background: var(--unnamed-color-aa0601) 0% 0% no-repeat padding-box;	
 				span {
 					padding: 6px 12px;
@@ -160,26 +245,13 @@ main {
 	.product-mindset {
 		background: var(--unnamed-color-fbf2f2) 0% 0% no-repeat padding-box;
 		.content {
-			padding-top: 80px;;
-			padding-bottom: 80px;
-			display: flex;
-			flex-direction: column;
-			justify-content: space-between;
-			align-items: center;
-			gap: 32px;
 			h2 {
 				font: var(--unnamed-font-style-normal) normal bold 48px/72px var(--unnamed-font-family-source-han-sans-tw);
 				letter-spacing: var(--unnamed-character-spacing-0);
 				color: var(--unnamed-color-650300);
 			}
 			.card {
-				display: flex;
-				justify-content: space-between;
 				li {
-					width: 23.6161%;
-					display: flex;
-					flex-direction: column;
-					align-items: center;
 					img {
 						margin-bottom: 24.08px;
 						height: 83.83px;
@@ -202,21 +274,12 @@ main {
 	}
 	.classic-design {
 		.content {
-			padding-top: 80px;
-			padding-bottom: 80px;
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			gap: 48px;
 			h2 {
 				font: var(--unnamed-font-style-normal) normal bold 48px/72px var(--unnamed-font-family-source-han-sans-tw);
 				letter-spacing: var(--unnamed-character-spacing-0);
 				color: var(--unnamed-color-650300);
 			}
 			.card {
-				display: flex;
-				justify-content: space-between;
-				gap: 24px;
 				li {
 					img {
 						margin-bottom: 8px;
@@ -236,12 +299,6 @@ main {
 		background: url(../assets/images/index-bg.png);
 		background-size: cover;
 		.content {
-			padding-top: 80px;
-			padding-bottom: 80px;
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			gap: 48px;
 			h2 {
 				font: var(--unnamed-font-style-normal) normal bold 48px/72px var(--unnamed-font-family-source-han-sans-tw);
 				letter-spacing: var(--unnamed-character-spacing-0);
@@ -249,9 +306,7 @@ main {
 				text-align: left;
 			}
 			.card {
-				display: flex;
 				.text {
-					padding: 8px 0;
 					background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
 					h3 {
 						letter-spacing: var(--unnamed-character-spacing-0);
@@ -265,20 +320,12 @@ main {
 	}
 	.customer-recommendation {
 		.content {
-			padding-top: 80px;
-			padding-bottom: 80px;
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			gap: 48px;
 			h2 {
 				font: var(--unnamed-font-style-normal) normal bold 48px/72px var(--unnamed-font-family-source-han-sans-tw);
 				letter-spacing: var(--unnamed-character-spacing-0);
 				color: var(--unnamed-color-650300);
 			}
 			.card {
-				display: flex;
-				gap: 24px;
 				li {
 					box-shadow: 0px 2px 6px #00000029;
 					border: 1px solid #DEE2E6;
@@ -314,71 +361,73 @@ main {
 	.contact-us {
 		background: var(--unnamed-color-fbf2f2) 0% 0% no-repeat padding-box;
 		.content {
-			padding-top: 80px;
-			padding-bottom: 80px;
-			display: flex;
-			flex-direction: column;
-			align-items: center;
 			div {
-				width: 49.074074%;
-			}
-			h2 {
-				margin-bottom: 48px;
-				font: var(--unnamed-font-style-normal) normal bold 48px/72px var(--unnamed-font-family-source-han-sans-tw);
-				letter-spacing: var(--unnamed-character-spacing-0);
-				color: var(--unnamed-color-650300);
-				text-align: center;
-			}
-			h3 {
-				margin-bottom: 24px;
-				font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) 20px/30px var(--unnamed-font-family-source-han-sans-tw);
-				letter-spacing: var(--unnamed-character-spacing-0);
-				color: var(--unnamed-color-000000);
-			}
-			.form {
-				display: flex;
-				flex-direction: column ;
-				gap: 16px;
-				p {
-					margin-bottom: 8px;
-					font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) 16px/24px var(--unnamed-font-family-source-han-sans-tw);
+				h2 {
+					margin-bottom: 48px;
+					font: var(--unnamed-font-style-normal) normal bold 48px/72px var(--unnamed-font-family-source-han-sans-tw);
+					letter-spacing: var(--unnamed-character-spacing-0);
+					color: var(--unnamed-color-650300);
+					text-align: center;
+				}
+				h3 {
+					margin-bottom: 24px;
+					font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) 20px/30px var(--unnamed-font-family-source-han-sans-tw);
 					letter-spacing: var(--unnamed-character-spacing-0);
 					color: var(--unnamed-color-000000);
 				}
-				li:not(:last-child) input {
-					padding: 6px 0 0 12px;
-					width: 100%;
-					height: 36px;
-					background: rgba(0, 0, 0, 0);
-					border: 1px solid black;
-					font-size: 16px;
-				}
-				textarea {
-					padding: 6px 0 0 12px;
-					width: 100%;
-					height: 136px;
-					background: rgba(0, 0, 0, 0);
-					border: 1px solid black;
-					font-size: 16px;
-					resize: none;
-				}
-				input::placeholder, textarea::placeholder {
-					font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) 16px/24px var(--unnamed-font-family-source-han-sans-tw);
-					letter-spacing: var(--unnamed-character-spacing-0);
-					color: grey;
-				}
-				li:last-child {
-					display: flex;
-					align-items: center;
-					input {
-						width: 16px;
-						height: 16px;
+				.form {
+					p {
+						margin-bottom: 8px;
+						font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) 16px/24px var(--unnamed-font-family-source-han-sans-tw);
+						letter-spacing: var(--unnamed-character-spacing-0);
+						color: var(--unnamed-color-000000);
 					}
-				}
-				label {
-					font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) 16px/24px var(--unnamed-font-family-source-han-sans-tw);
-					letter-spacing: var(--unnamed-character-spacing-0);
-					color: var(--unnamed-color-000000);
+					.name>input, .phone-number>input, .email-address>input {
+						margin-bottom: 16px;
+						padding: 6px 0 0 12px;
+						width: 100%;
+						height: 36px;
+						background: rgba(0, 0, 0, 0);
+						border: 1px solid black;
+						font-size: 16px;
+					}
+					.feedback>textarea {
+						margin-bottom: 16px;
+						padding: 6px 0 0 12px;
+						width: 100%;
+						height: 136px;
+						background: rgba(0, 0, 0, 0);
+						border: 1px solid black;
+						font-size: 16px;
+						resize: none;
+					}
+					input::placeholder, textarea::placeholder {
+						font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) 16px/24px var(--unnamed-font-family-source-han-sans-tw);
+						letter-spacing: var(--unnamed-character-spacing-0);
+						color: grey;
+					}
+					.terms-conditions-checkbox {
+						margin-bottom: 48px;
+						display: flex;
+						align-items: center;
+						input {
+							width: 16px;
+							height: 16px;
+						}
+						label {
+							font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) 16px/24px var(--unnamed-font-family-source-han-sans-tw);
+							letter-spacing: var(--unnamed-character-spacing-0);
+							color: var(--unnamed-color-000000);
+						}
+					}
+					.submit-btn>button {
+						margin-left: 132px;
+						border: none;
+						background: var(--unnamed-color-aa0601) 0% 0% no-repeat padding-box;
+						font: var(--unnamed-font-style-normal) normal bold 16px/24px var(--unnamed-font-family-source-han-sans-tw);
+						letter-spacing: var(--unnamed-character-spacing-0);
+						color: var(--unnamed-color-ffffff);
+					}
 				}
 			}
 		}
@@ -388,13 +437,7 @@ footer {
 	.footer {
 		background: var(--unnamed-color-aa0601) 0% 0% no-repeat padding-box;
 		.content {
-			padding-top: 48px;
-			padding-bottom: 32px;
-			display: flex;
-			flex-direction: column;
 			.related-link {
-				display: flex;
-				justify-content: space-between;
 				.navbar {
 					ul {
 						display: flex;
