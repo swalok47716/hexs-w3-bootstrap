@@ -542,6 +542,7 @@ a {
 		div {
 			display: flex;
 			flex-direction: column;
+			justify-content: center;
 			h2 {
 				margin-bottom: 48px;
 				font: var(--unnamed-font-style-normal) normal bold 48px/72px var(--unnamed-font-family-source-han-sans-tw);
@@ -621,8 +622,7 @@ a {
 					margin-bottom: 24px;
 				}
 				.submit-btn {
-					width: 60%;
-					align-self: center;
+					width: 50%;
 				}
 			}
 		}
