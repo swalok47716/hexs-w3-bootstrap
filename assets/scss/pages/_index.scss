@@ -258,7 +258,7 @@ a {
 	}
 }
 .hero-banner {
-	background: url(../assets/images/home-header.png) no-repeat;
+	background: url(../../assets/images/home-header.png) no-repeat;
 	background-size: cover;
 	background-position: center center;
 	.content {
@@ -289,7 +289,7 @@ a {
 		}
 	}
 	@media(max-width: 768px) {
-		background: url(../assets/images/home-header-sm.png) no-repeat;
+		background: url(../../assets/images/home-header-sm.png) no-repeat;
 		background-size: cover;
 		background-position: center center;
 		.content {
@@ -416,8 +416,9 @@ a {
 	}
 }
 .collab-design {
-	background: url(../assets/images/index-bg.png);
+	background: url(../../assets/images/index-bg.png);
 	background-size: cover;
+	background-position: center center;
 	.content {
 		h2 {
 			font: var(--unnamed-font-style-normal) normal bold 48px/72px var(--unnamed-font-family-source-han-sans-tw);
@@ -438,6 +439,9 @@ a {
 		}
 	}
 	@media(max-width: 992px) {
+		background: url(../../assets/images/index-bg-sm.png);
+		background-size: cover;
+		background-position: center center;
 		.content {
 			.card {
 				flex-direction: column;
@@ -446,6 +450,9 @@ a {
 		}
 	}
 	@media(max-width: 768px) {
+		background: url(../../assets/images/index-bg-md.png);
+		background-size: cover;
+		background-position: center center;
 		.content {
 			h2 {
 				font-size: 24px;
